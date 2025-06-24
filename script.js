@@ -30,12 +30,9 @@ function update() {
     }
   });
 
-  const activeCircles = document.querySelectorAll(".circle.active").length;
-  const progressWidth = ((activeCircles - 1) / (circles.length - 1)) * 100;
-  progress.style.width = progressWidth + "%";
+  const actives = document.querySelectorAll(".circle.active");
+  progress.style.width = ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
 
   prev.disabled = currentStep === 1;
   next.disabled = currentStep === circles.length;
 }
-
-
