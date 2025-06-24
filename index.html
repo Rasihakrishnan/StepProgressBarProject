@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Step Progress Bar</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
     <h1>Step Progress Bar</h1>
-    <p class="description">Track your progress through the steps by using the navigation buttons.</p>
-    
+    <p class="description">Click next to move forward and back to return to previous steps.</p>
+
     <div class="progress-container" id="progress-container">
       <div class="progress" id="progress"></div>
       <div class="circle active">1</div>
@@ -21,12 +21,15 @@
     </div>
 
     <div class="btn-group">
-      <button class="btn" id="prev" disabled>&larr; Previous</button>
-      <button class="btn" id="next">Next &rarr;</button>
+      <button class="btn" id="prev">
+        <img src="assets/back-arrow.png" class="icon" alt="Back" /> Previous
+      </button>
+      <button class="btn" id="next">
+        Next <img src="assets/next-arrow.png" class="icon" alt="Next" />
+      </button>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
