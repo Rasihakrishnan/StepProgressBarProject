@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step Progress Bar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Step Progress Bar</h1>
+    <p class="description">Track your progress through the steps by using the navigation buttons.</p>
+    
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+      <div class="circle active">1</div>
+      <div class="circle">2</div>
+      <div class="circle">3</div>
+      <div class="circle">4</div>
+      <div class="circle">5</div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn" id="prev" disabled>&larr; Previous</button>
+      <button class="btn" id="next">Next &rarr;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
